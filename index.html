@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+
+  <head>
+    <link rel="stylesheet" href="Style/styles.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Simple Form</title>
+    <!--[if lt IE 9]>
+	     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	  <![endif]-->
+
+
+  </head>
+  <body>
+
+    <div  class="form1">
+      <form id="main_form" name="main_form"
+            action="https://60376bfd5435040017722533.mockapi.io/form", method = "post">
+        <h2>Задать вопрос</h2>
+        <input name ="name" type="text"  class="text_inp"   placeholder="Фамилия Имя Отчество *"  name="FIO_name" required pattern="^[А-Яа-яЁё\s]{1,}$">
+        <input name = "phone" type="tel"  class="text_inp"      placeholder="Телефон *"  required pattern="^[+]?[0-9\s]{11,}">
+        <input name = "email" type="email" class="text_inp"      placeholder="Email" pattern="^\S+@[a-z]{1,}[.]{1}[a-z]+">
+        <input type="submit" id ="button" value="ОТПРАВИТЬ ЗАПРОС">
+      </form>
+    </div>
+
+
+  </body>
+</html>
